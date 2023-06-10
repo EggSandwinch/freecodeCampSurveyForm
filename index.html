@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">League Satisfaction Survey Form</h1>
+    <p id="description">Is League fun, enjoyable, and stress free game? help us find out...</p>
+    <form>
+        <fieldset>
+            <label for="name">Name: </label><input type="text" id="name" name="username" id="name-label" placeholder="Enter your Name" required>
+            <label>Email: </label><input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            <label for="number">Age(optional): </label><input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your Age">
+            <label for="dropdown">What is your main role ingame?</label>
+            <select id="dropdown" name="role-selector" required>
+                <option disabled selected value="">Choose an option</option>
+                <option value="1">Top</option>
+                <option value="2">Jungle</option>
+                <option value="3">Mid</option>
+                <option value="4">Support</option>
+            </select>
+
+            <label>Would you recommend playing league to you friends and other people?</label>
+           <label><input type="radio" class="radio" name="choice">Yes!, definitely! league is fun!</label>
+           <label><input type="radio" class="radio" name="choice">Yes, but I should warn them tho</label>
+           <label><input type="radio" class="radio" name="choice">Yes, so we can suffer together</label>
+           <label><input type="radio" class="radio" name="choice">No, I don't want them to suffer like I am</label>
+           <label><input type="radio" class="radio" name="choice">No freaking way! trash game</label>
+            
+           <label>What are the things you like about league?</label>
+            <label><input type="checkbox" class="checkbox"> It's fun and exciting!</label>
+            <label><input type="checkbox" class="checkbox"> It's a great game to play with your friends</label>
+            <label><input type="checkbox" class="checkbox"> It makes me better at fast decision making and strategic planning</label>
+            <label><input type="checkbox" class="checkbox"> It is a good time killer</label>
+            <label><input type="checkbox" class="checkbox"> It is my stress reliever after a tiring day</label>
+            <label><input type="checkbox" class="checkbox"> I feel better when I play league</label>
+            <label><input type="checkbox" class="checkbox"> I like the challenges it gives me ingame</label>
+            <label><input type="checkbox" class="checkbox"> It is my escape from reality</label>
+            
+            <label for="experience">What is the most memorable thing you experienced when playing league? <textarea id="experience" name="experience" placeholder="My first ever Pentakill!"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
